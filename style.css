@@ -1,0 +1,163 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+body {
+    font-family: Raleway, sans-serif;
+}
+.navbar-fixed {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+}
+
+h1 {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.full {
+  height: 100vh;
+}
+
+.full-projetos {
+  height: 150vh;
+}
+
+section > h1 {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+
+body {
+  background: #090e16;
+}
+
+section {
+  background: #090e16;
+}
+
+.navbar {
+  background: #090e16;
+  color: rgb(107, 107, 107);
+}
+
+.menu-img {
+  padding: 10px;
+}
+
+.card {
+  background: rgba(123, 74, 226, 0.1);
+  color: white;
+}
+
+.title {
+  color: white;
+}
+
+.navbar-item {
+  color: white;
+}
+
+a:hover {
+  background-color: black !important;
+  border-radius: 10px;
+}
+
+.is-divider {
+  background: rgba(123, 74, 226, 0.2);
+}
+
+.footer {
+  background: rgba(123, 74, 226, 0.2);
+  color: white;
+}
+
+.icons img {
+  margin-right: 10px;
+}
+
+.sobre {
+  margin-top: 80px;
+}
+
+.skills {
+  background: #1572b6;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-radius: 10%;
+  transition: transform 0.3s;
+}
+
+.skills:hover {
+  transform: scale(1.2);
+}
+
+.over-img {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.over-img:hover {
+  transform: scale(1.1);
+}
+
+.icon-over {
+  transition: transform 0.3s;
+}
+
+.icon-over:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  padding: 10px;
+}
+
+.icon-footer {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.text-content {
+  display: none;
+}
+
+.skills:hover + .text-content {
+  display: block;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text {
+  margin-left: 10px;
+}
+
+.icon-images {
+  display: flex;
+}
+
+footer{
+    height: 20vh;
+}
+
+.content{
+    height: 20vh;
+}
+
+.over-disabled{
+    cursor: not-allowed;
+}

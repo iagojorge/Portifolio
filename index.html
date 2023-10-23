@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minha Aplicação Bulma</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-fixed"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+            <img
+              src="./assets/img/menu-img.png"
+              width="80"
+              height="300"
+              class="menu-img"
+            />
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#home">Home</a>
+              <a class="navbar-item" href="#sobre">Sobre Mim</a>
+              <a class="navbar-item" href="#projetos">Projetos</a>
+              <a class="navbar-item" href="#habilidades">Habilidades</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="section is-large full" id="home">
+        <div class="columns">
+          <div class="column">
+            <h2>Olá, me chamo</h2>
+            <h1>Iago Jorge</h1>
+            <h2 class="subtitle">Desenvolvedor Full-Stack</h2>
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/iago-jorge-0131a0214/"
+                target="_blank"
+                class="over-img"
+              >
+                <img src="./assets/icon/linkedin-icon.svg" alt="" class="icon-over"/>
+              </a>
+              <a href="https://github.com/iagojorge" target="_blank">
+                <img src="./assets/icon/github-icon.svg" alt=""  class="icon-over"/>
+              </a>
+              <button
+                id="downloadButton"
+                class="button is-link is-outlined is-rounded icon-over"
+              >
+                Baixar CV
+              </button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./assets/undraw_dev_productivity_re_fylf.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <hr class="is-divider" />
+      <section class="section is-large full" id="sobre">
+        <div class="columns fade-out">
+          <div class="column is-5">
+            <figure class="image is-square scale-up-center">
+              <img class="is-rounded" src="./assets/img/me.jpg" />
+            </figure>
+          </div>
+          <div class="column bounce-in-left">
+            <h1 class="title sobre bounce-in-left">Sobre mim</h1>
+            <h2 class="subtitle">
+              Graduado em Análise e Desenvolvimento de Sistemas, minha jornada
+              no desenvolvimento começou em 2018 com Python. Atualmente, sou
+              especializado em JavaScript, utilizando as frameworks Vue.js e
+              Angular, com mais de 2 anos de experiência. Minha paixão é criar
+              aplicações web que proporcionem uma excelente experiência do
+              usuário. Vamos transformar ideias em realidade!
+            </h2>
+          </div>
+        </div>
+      </section>
+      <hr class="is-divider" />
+      <section class="section is-large full-projetos">
+        <h1 id="projetos">Trabalhos e projetos</h1>
+        <div class="columns">
+          <div class="column">
+            <div class="card over-img" id="time-tracker">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/img/time-tracker.jpg" alt="Placeholder image" />
+                </figure>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left"></div>
+                    <div class="media-content">
+                      <p class="title is-4">Time Tracker</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    O TimeTracker é um aplicativo web moderno desenvolvido em
+                    Vue.js e TypeScript, projetado para simplificar o
+                    rastreamento de tempo de tarefas e projetos de forma
+                    eficiente. O aplicativo oferece uma experiência intuitiva e
+                    fácil de usar, ajudando os usuários a gerenciar melhor seu
+                    tempo e recursos.
+                  </div>
+                  <img
+                    alt="vue"
+                    src="https://img.shields.io/badge/Vue.js-25D366?style=for-the-badge&logo=vue.js&logoColor=white"
+                  />
+                  <img
+                    alt="nodejs"
+                    src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card over-disabled" id="new-project">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/img/projeto.jpg" alt="Placeholder image" />
+                </figure>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left"></div>
+                    <div class="media-content">
+                      <p class="title is-4">Em Construção</p>
+                    </div>
+                  </div>
+                  <div class="content">
+
+                  </div>
+                  <img
+                  alt="build"
+                  src="https://img.shields.io/badge/building-ED8B00?style=for-the-badge&logoColor=white"
+                />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card over-disabled" id="new-project">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/img/projeto.jpg" alt="Placeholder image" />
+                </figure>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left"></div>
+                    <div class="media-content">
+                      <p class="title is-4">Em Construção</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    
+     
+                  </div>
+                  <img
+                    alt="build"
+                    src="https://img.shields.io/badge/building-ED8B00?style=for-the-badge&logoColor=white"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="is-divider" />
+      <section class="section is-large full" id="habilidades">
+        <div class="columns">
+          <div class="column is-5">
+            <figure
+              class="image is-96x96 skills"
+              style="background: #ffd700"
+              data-titulo="JavaScript"
+              data-text="JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma."
+            >
+              <img src="assets/icon/js-icon.svg" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: #007acc"
+              data-titulo="TypeScript"
+              data-text="TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem."
+            >
+              <img src="assets/icon/ts-icon.svg" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background-color: #8cc84b"
+              data-titulo="Node.JS"
+              data-text="Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web."
+            >
+              <img src="assets/icon/node-icon.svg" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: #f16529"
+              data-titulo="HTML"
+              data-text="HTML é uma linguagem de marcação utilizada na construção de páginas na Web."
+            >
+              <img src="assets/icon/html-icon.svg" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: #f05133"
+              data-titulo="Git"
+              data-text="Git é um sistema de controle de versões distribuído, para registrar o histórico de edições de qualquer tipo de arquivo."
+            >
+              <img src="assets/icon/git-icon.svg" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: #1572b6"
+              data-titulo="CSS "
+              data-text="Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>."
+            >
+              <img src="assets/icon/css-icon.svg" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: #b52e31"
+              data-titulo="Angular+"
+              data-text="Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript"
+            >
+              <img src="assets/icon/angular-icon.png" alt="" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: #41b883"
+              data-titulo="Vue.js"
+              data-text="Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única."
+            >
+              <img src="assets/icon/vue-icon.png" alt="" class="icon" />
+            </figure>
+            <figure
+              class="image is-96x96 skills"
+              style="background: black"
+              data-titulo="Figma"
+              data-text="Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web."
+            >
+              <img src="assets/icon/figma-icon.png" alt="" class="icon" />
+            </figure>
+          </div>
+          <div class="column">
+            <div class="info">
+              <h1 class="title">Habilidades</h1>
+              <h2 class="subtitle">Aponte para uma skill para saber mais!</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <p>Iago Jorge Leite © 2023</p>
+          </div>
+          <div class="column is-narrow">
+            <div class="icon-container">
+              <div class="icon-images">
+                <figure class="image is-48x48 icon-footer icon-over">
+                  <a href="mailto:iagobem2010@gmail.com">
+                    <img src="assets/icon/email-icon.svg" alt=""/>
+                  </a>
+                </figure>
+              </div>
+              <div class="icon-text">
+                <p>E-mail</p>
+              </div>
+            </div>
+            <div class="icon-container">
+              <div class="icon-images">
+                <figure class="image is-48x48 icon-footer icon-over">
+                  <a href="https://api.whatsapp.com/send?phone=5527996394442&text=Olá,%20gostaria%20de%20entrar%20em%20contato%20com%20você." target="_blank">
+                    <img src="assets/icon/wtz-icon.svg" alt=""/>
+                  </a>
+                </figure>
+              </div>
+              <div class="icon-text">
+                <p>WhatsApp</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
