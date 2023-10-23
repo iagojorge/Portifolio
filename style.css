@@ -1,8 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-
 body {
-    font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 .navbar-fixed {
   position: fixed;
@@ -150,14 +149,18 @@ a:hover {
   display: flex;
 }
 
-footer{
-    height: 20vh;
+footer {
+  height: 20vh;
 }
 
-.content{
-    height: 20vh;
+.content {
+  height: 20vh;
 }
 
-.over-disabled{
-    cursor: not-allowed;
+.over-disabled {
+  cursor: not-allowed;
+}
+
+.padding {
+  padding-bottom: 60px;
 }
