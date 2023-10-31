@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
@@ -41,6 +42,7 @@
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
+            
           </a>
         </div>
 
@@ -59,7 +61,7 @@
 
     <div class="container">
       <section class="section is-large full" id="home">
-        <div class="columns">
+        <div class="columns margin-mobile">
           <div class="column">
             <h2>Olá, me chamo</h2>
             <h1>Iago Jorge</h1>
@@ -97,16 +99,16 @@
         </div>
       </section>
       <hr class="is-divider" />
-      <section class="section is-large full" id="sobre">
+      <section class="section is-large full" id="sobre">  
         <div class="columns fade-out">
           <div class="column is-5">
-            <figure class="image is-square scale-up-center">
-              <img class="is-rounded" src="./assets/img/me.jpg" />
+            <figure class="image scale-up-center img-size">
+              <img class="is-rounded img-responsive" src="./assets/img/me.jpg" />
             </figure>
           </div>
           <div class="column bounce-in-left">
             <h1 class="title sobre bounce-in-left">Sobre mim</h1>
-            <h2 class="subtitle">
+            <h2 class="subtitle subtitle-mobile">
               Graduado em Análise e Desenvolvimento de Sistemas, minha jornada
               no desenvolvimento começou em 2018 com Python. Atualmente, sou
               especializado em JavaScript, utilizando as frameworks Vue.js e
@@ -118,9 +120,9 @@
         </div>
       </section>
       <hr class="is-divider" />
-      <section class="section is-large full-projetos">
+      <section class="section is-large full-projetos teste">
         <div id="projetos" class="padding"></div>
-        <h1>Trabalhos e projetos</h1>
+        <h1 class="scrollreveal">Trabalhos e projetos</h1>
         <div class="columns">
           <div class="column">
             <div class="card over-img" id="time-tracker">
@@ -139,12 +141,14 @@
                     </div>
                   </div>
                   <div class="content">
-                    O TimeTracker é um aplicativo web moderno desenvolvido em
-                    Vue.js e TypeScript, projetado para simplificar o
-                    rastreamento de tempo de tarefas e projetos de forma
-                    eficiente. O aplicativo oferece uma experiência intuitiva e
-                    fácil de usar, ajudando os usuários a gerenciar melhor seu
-                    tempo e recursos.
+                    <p class="text-content">
+                      O TimeTracker é um aplicativo web moderno desenvolvido em
+                      Vue.js e TypeScript, projetado para simplificar o
+                      rastreamento de tempo de tarefas e projetos de forma
+                      eficiente. O aplicativo oferece uma experiência intuitiva e
+                      fácil de usar, ajudando os usuários a gerenciar melhor seu
+                      tempo e recursos.
+                    </p>
                   </div>
                   <img
                     alt="vue"
@@ -207,6 +211,12 @@
       <hr class="is-divider" />
       <section class="section is-large full" id="habilidades">
         <div class="columns">
+          <div class="column is-7" id="info-container">
+            <div class="info">
+              <h1 class="title">Habilidades</h1>
+              <h2 class="subtitle">Aponte para uma skill para saber mais!</h2>
+            </div>
+          </div>
           <div class="column is-5">
             <figure
               class="image is-96x96 skills"
@@ -280,19 +290,13 @@
             >
               <img src="assets/icon/figma-icon.png" alt="" class="icon" />
             </figure>
-          </div>
-          <div class="column">
-            <div class="info">
-              <h1 class="title">Habilidades</h1>
-              <h2 class="subtitle">Aponte para uma skill para saber mais!</h2>
-            </div>
-          </div>
+          </div>   
         </div>
       </section>
     </div>
     <footer class="footer">
       <div class="container">
-        <div class="columns is-vcentered">
+        <div class="columns is-vcentered teste">
           <div class="column">
             <p>Iago Jorge Leite © 2023</p>
           </div>
@@ -309,7 +313,7 @@
                 <p>E-mail</p>
               </div>
             </div>
-            <div class="icon-container">
+            <div class="icon-container icon-zap">
               <div class="icon-images">
                 <figure class="image is-48x48 icon-footer icon-over">
                   <a

@@ -12,20 +12,17 @@ downloadButton.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const imageHoverElements = document.querySelectorAll(".skills");
+  const infoContainer = document.getElementById("info-container");
 
   imageHoverElements.forEach((element) => {
     element.addEventListener("mouseover", function () {
       const text = element.getAttribute("data-text");
       const titulo = element.getAttribute("data-titulo");
-      const info =
-        element.parentElement.nextElementSibling.querySelector(".info");
-      info.innerHTML = `<h1 class="title">${titulo}</h1><h2 class="subtitle">${text}</h2>`;
+      infoContainer.innerHTML = `<h1 class="title">${titulo}</h1><h2 class="subtitle">${text}</h2>`;
     });
 
     element.addEventListener("mouseout", function () {
-      const info =
-        element.parentElement.nextElementSibling.querySelector(".info");
-      info.innerHTML = `<h1 class="title">Habilidades</h1><h2 class="subtitle">Aponte para uma skill para saber mais!</h2>`;
+      infoContainer.innerHTML = `<h1 class="title">Habilidades</h1><h2 class="subtitle">Aponte para uma skill para saber mais!</h2>`;
     });
   });
 });
@@ -41,3 +38,10 @@ var newProject = document.getElementById("new-project");
 newProject.addEventListener("click", function () {
   window.open("https://", "_blank");
 });
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal(".column", { duration: 2000 });
+sr.reveal(".scrollreveal", { duration: 2000 });
+
+
