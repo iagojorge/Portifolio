@@ -33,10 +33,16 @@ timeTracker.addEventListener("click", function () {
   window.open("https://iago-tracker.vercel.app/", "_blank");
 });
 
+var conect = document.getElementById("conect");
+
+conect.addEventListener("click", function () {
+  window.open("https://app.conect360.org/app/login", "_blank");
+});
+
 var newProject = document.getElementById("new-project");
 
 newProject.addEventListener("click", function () {
-  window.open("https://", "_blank");
+  window.open("https://www.conexos.com.br/", "_blank");
 });
 
 window.sr = ScrollReveal({ reset: true });
